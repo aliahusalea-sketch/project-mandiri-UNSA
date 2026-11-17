@@ -1,0 +1,14 @@
+{
+  "name": "data-mahasiswa-unsa",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n BACKEND,FRONTEND -c blue,magenta \"npm --prefix backend-unsa run dev\" \"npm --prefix frontend-mahasiswa run dev\"",
+    "dev:backend": "npm --prefix backend-unsa run dev",
+    "dev:frontend": "npm --prefix frontend-mahasiswa run dev",
+    "install:all": "npm install && npm --prefix backend-unsa install && npm --prefix frontend-mahasiswa install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
